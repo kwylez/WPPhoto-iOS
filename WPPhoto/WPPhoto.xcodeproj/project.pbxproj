@@ -20,6 +20,8 @@
 		015919FE18F5BD3F00BCEEE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 015919FC18F5BD3F00BCEEE0 /* InfoPlist.strings */; };
 		01591A0018F5BD3F00BCEEE0 /* WPPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 015919FF18F5BD3F00BCEEE0 /* WPPhotoTests.m */; };
 		01591A0A18F5BEE900BCEEE0 /* FFEF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01591A0918F5BEE900BCEEE0 /* FFEF.framework */; };
+		01591A0D18F5CF2600BCEEE0 /* WPRPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 01591A0C18F5CF2600BCEEE0 /* WPRPhoto.m */; };
+		01591A0E18F5CF2600BCEEE0 /* WPRPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 01591A0C18F5CF2600BCEEE0 /* WPRPhoto.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		015919FD18F5BD3F00BCEEE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		015919FF18F5BD3F00BCEEE0 /* WPPhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPPhotoTests.m; sourceTree = "<group>"; };
 		01591A0918F5BEE900BCEEE0 /* FFEF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FFEF.framework; path = ../External/FFEF.framework; sourceTree = "<group>"; };
+		01591A0B18F5CF2600BCEEE0 /* WPRPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPRPhoto.h; sourceTree = "<group>"; };
+		01591A0C18F5CF2600BCEEE0 /* WPRPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPRPhoto.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,10 +115,11 @@
 		015919E018F5BD3F00BCEEE0 /* WPPhoto */ = {
 			isa = PBXGroup;
 			children = (
-				015919E918F5BD3F00BCEEE0 /* WPRAppDelegate.h */,
-				015919EA18F5BD3F00BCEEE0 /* WPRAppDelegate.m */,
 				015919EC18F5BD3F00BCEEE0 /* Images.xcassets */,
 				015919E118F5BD3F00BCEEE0 /* Supporting Files */,
+				015919E918F5BD3F00BCEEE0 /* WPRAppDelegate.h */,
+				015919EA18F5BD3F00BCEEE0 /* WPRAppDelegate.m */,
+				01591A0F18F5CF3100BCEEE0 /* Models */,
 			);
 			path = WPPhoto;
 			sourceTree = "<group>";
@@ -146,6 +151,15 @@
 				015919FC18F5BD3F00BCEEE0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01591A0F18F5CF3100BCEEE0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				01591A0B18F5CF2600BCEEE0 /* WPRPhoto.h */,
+				01591A0C18F5CF2600BCEEE0 /* WPRPhoto.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01591A0D18F5CF2600BCEEE0 /* WPRPhoto.m in Sources */,
 				015919EB18F5BD3F00BCEEE0 /* WPRAppDelegate.m in Sources */,
 				015919E718F5BD3F00BCEEE0 /* main.m in Sources */,
 			);
@@ -253,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01591A0E18F5CF2600BCEEE0 /* WPRPhoto.m in Sources */,
 				01591A0018F5BD3F00BCEEE0 /* WPPhotoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
